@@ -27,7 +27,7 @@ const Footer = () => {
         <div>
             <h1 className="text-center text-white text-3xl md:text-4xl mb-2 roboto-medium-italic">Contact Us</h1>
             <p className="text-wrap text-white mx-4 roboto-light-italic text-center">If you have any questions or need assistance, please dont hesitate to reach out.</p>
-            <p className="text-center text-white roboto-light-italic">Email:  <a href="mailto:info@shawarmaSpot.com">info@shawarmaSpot.com</a></p>
+            <p className="text-center text-white roboto-light-italic">Email:  <a href="mailto:info@shawarmaSpot.com">info@AbshawarmaSpot.com</a></p>
             <p className="text-center text-white roboto-light-italic">Phone:  <a href="tel:0123456789">012-345-6789</a></p>
         </div>
       </div>

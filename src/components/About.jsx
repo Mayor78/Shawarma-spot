@@ -79,7 +79,7 @@ const About = () => {
             OUR <span className="text-red-500">STORY</span>
           </h1>
 
-          <p className="text-[16px] shadow-2xl  clipForText bg-[#7F4145] text-white text-wrap leading-8 roboto-regular bg-slate-10 customRadius py-6 px-6 break-words h-[30rem] w-[24rem] text-justify">
+          <p className=" text-sm md:text-[16px] shadow-2xl  clipForText bg-[#7F4145] text-white text-wrap leading-8 roboto-regular bg-slate-10 customRadius py-6 px-6 break-words  h-[30rem]  max-w-full md:w-[24rem] text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
             consectetur nisi. Aliquam erat volutpat. Donec et neque at justo
             dictum dictum. Nulla facilisi. Lorem ipsum dolor, sit amet
@@ -126,11 +126,13 @@ const About = () => {
       >
         <div className="parent-wrapper flex flex-wrap  justify-center gap-5  text-white bg-black/80 w-full">
           <div className="mt-20 mx-2 md:mx-0">
-            <h2 className="text-justify text-wrap text-[1.5rem] md:text-3xl w-[25rem]">
+            <h2 className="text-center text-wrap  ">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Incidunt, nesciunt!
+              Incidunt, nesciunt!Incidunt, nesciunt!
             </h2>
-            <p className="text-xs">
+            <p className="text-xs mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              explicabo accusantium deserunt.
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               explicabo accusantium deserunt.
             </p>
@@ -225,15 +227,63 @@ const About = () => {
         <h1 className="text-center mb-4 roboto-bold text-red-500 text-3xl">OUR <span className="text-green-500">SIDE </span>DISHES</h1>
 
         <div className="flex flex-col ">
-            <div className="flex flex-wrap gap-6 justify-center">
-            <img src={spag} alt="" className="w-[200px] md:w-[400px] h-[200px] rounded-md"  />
-            <img src={fried} alt="" className=" w-[200px] h-[200px] rounded-md"  />
-            <img src={porato} alt="" className=" w-[200px] h-[200px] rounded-md" />
+            <div className="flex flex-wrap gap-3 md:gap-6 justify-center">
+            <div className="relative w-full md:w-[400px] h-[400px] md:h-[200px] rounded-md overflow-hidden group">
+        <img src={spag} alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <div className="text-center text-white">
+            <h2 className="text-lg font-bold">Spaghetti</h2>
+            <p>Delicious side dish</p>
+          </div>
+        </div>
+      </div>
+      <div className="relative w-full md:w-[200px] h-[400px] md:h-[200px] rounded-md overflow-hidden group">
+        <img src={fried} alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <div className="text-center text-white">
+            <h2 className="text-lg font-bold">Spaghetti</h2>
+            <p>Delicious side dish</p>
+          </div>
+        </div>
+      </div>
+            <div className="relative w-full md:w-[200px] h-[400px] md:h-[200px] rounded-md overflow-hidden group">
+        <img src={porato} alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <div className="text-center text-white">
+            <h2 className="text-lg font-bold">Spaghetti</h2>
+            <p>Delicious side dish</p>
+          </div>
+        </div>
+      </div>
             </div>
            <div className="flex flex-wrap mt-4 gap-6 justify-center">
-           <img src={rice} alt="" className=" w-[200px] h-[200px] rounded-md" />
-           <img src={mac} alt="" className=" w-[200px] h-[200px] rounded-md" />
-           <img src={rice} alt=""  className=" w-[200px] md:w-[400px] h-[200px] rounded-md" />
+           <div className="relative w-full md:w-[200px] h-[400px] md:h-[200px] rounded-md overflow-hidden group">
+        <img src={spag} alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <div className="text-center text-white">
+            <h2 className="text-lg font-bold">Spaghetti</h2>
+            <p>Delicious side dish</p>
+          </div>
+        </div>
+      </div>
+      <div className="relative w-full md:w-[200px] h-[400px] md:h-[200px] rounded-md overflow-hidden group">
+        <img src={mac} alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <div className="text-center text-white">
+            <h2 className="text-lg font-bold">Spaghetti</h2>
+            <p>Delicious side dish</p>
+          </div>
+        </div>
+      </div>
+      <div className="relative w-full md:w-[400px] h-[400px] md:h-[200px] rounded-md overflow-hidden group">
+        <img src={rice} alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <div className="text-center text-white">
+            <h2 className="text-lg font-bold">Spaghetti</h2>
+            <p>Delicious side dish</p>
+          </div>
+        </div>
+      </div>
            </div>
             
         </div>

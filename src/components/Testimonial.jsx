@@ -58,7 +58,7 @@ const Testimonial = () => {
 
   return (
     <div
-      className="relative w-full h-full mb-10 mt-5 overflow-hidden"
+      className="relative w-full h-full mt-10 overflow-hidden"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundPosition: "center",
@@ -67,9 +67,9 @@ const Testimonial = () => {
         height: "300px",
       }}
     >
-      <div className="secondary-wrapper bg-black/80 w-full h-full text-white flex flex-col items-center justify-center">
+      <div className="secondary-wrapper bg-black/80 w-full  h-full text-white flex flex-col items-center justify-center">
         <div className="caro p-2 text-center">
-          <h1 className="text-[18px] font-bold text-white">What Our Customers Say</h1>
+          <h1 className="text-[18px] font-bold text-white pt-3 mt-10">What Our Customers Say</h1>
         </div>
         
         {/* Carousel container */}
@@ -82,11 +82,11 @@ const Testimonial = () => {
           {carouselItems.map((item, index) => (
             <div
               key={index}
-              className="w-full   flex-shrink-0 h-full flex flex-col items-center justify-center p-4 text-center"
+              className="w-full  mt- flex-shrink-0 h-full flex flex-col items-center justify-center p- text-center"
               style={{ minWidth: "100%" }} // Ensures each item takes full width of the carousel container
             >
               {/* Description First */}
-              <p className="text-sm mb-4">{item.description}</p>
+              <p className="text-xs md:text-sm mb-4 md:max-w-[40rem]">{item.description}</p>
 
               {/* Conditionally Render Icon or Image */}
               {item.image ? (
@@ -105,7 +105,7 @@ const Testimonial = () => {
         </div>
 
         {/* Indicators */}
-        <div className="absolute bottom-2 left-1/2  transform -translate-x-1/2 flex space-x-2">
+        <div className="absolute bottom-2 left-1/2 mt-6  transform -translate-x-1/2 flex space-x-2">
           {carouselItems.map((_, index) => (
             <div
               key={index}
